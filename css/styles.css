@@ -556,7 +556,7 @@ footer .link {
 .join-us {
   width: 206px;
 }
-.join-us p{
+.join-us p {
   text-transform: uppercase;
   margin-bottom: 20px;
 
@@ -644,7 +644,8 @@ footer .link {
   min-height: 581px;
   border-radius: 4px;
   background-color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 
   position: absolute;
   top: 50%;
@@ -658,14 +659,14 @@ footer .link {
   flex-direction: column;
 }
 
-.modal h3{
+.modal h3 {
   font-weight: 700;
-    font-size: 20px;
-    line-height: calc(23/20);
-    text-align: center;
-    letter-spacing: 0.03em;  
-    color: #212121;
-    margin-bottom: 12px;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 12px;
 }
 
 .is-hidden {
@@ -694,27 +695,26 @@ footer .link {
   height: 11px;
 }
 
-
 /* homework 6 */
 
-.mailing-form{
+.mailing-form {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-.mailing label{
+.mailing label {
   text-transform: uppercase;
-  
+
   display: block;
   margin-bottom: 20px;
-  
+
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
 }
 
-.mailing input{
+.mailing input {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -726,18 +726,18 @@ footer .link {
   color: #ffffff;
 }
 
-.mailing input:focus{
+.mailing input:focus {
   outline: none;
   border-color: var(--color-blue);
 }
 
-.modal-form{
+.modal-form {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.modal-label{
+.modal-label {
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -749,83 +749,83 @@ footer .link {
   position: relative;
 }
 
-.modal-form input{
+.modal-form input {
   height: 40px;
   padding-left: 42px;
   padding-right: 24px;
   color: rgba(33, 33, 33, 1);
-  
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form textarea{
+.modal-form textarea {
   resize: none;
   padding: 12px 16px;
 
   color: rgba(33, 33, 33, 1);
-  
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form textarea::placeholder{
+.modal-form textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-form input:focus,
-.modal-form textarea:focus{
+.modal-form textarea:focus {
   outline: none;
   border-color: var(--color-blue);
 }
 
-.label-checkbox{
+.label-checkbox {
   display: flex;
   align-items: center;
   gap: 8.4px;
 
   font-size: 14px;
-    line-height: calc(24/14);
-    letter-spacing: 0.03em;
-    color: #757575;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: #757575;
 }
-.label-checkbox a{
+.label-checkbox a {
   color: var(--color-blue);
 }
 
-.input-checkbox{
+.input-checkbox {
   width: 16px;
 }
 
-.modal-button{
-  width: 200px;
+.modal-button {
+  padding: 10px 52px;
   margin-left: auto;
   margin-right: auto;
-  
+
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-button:hover{
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
+.modal-button:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.button-with-icon{
+.button-with-icon {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.icon-send{
+.icon-send {
   width: 24px;
   height: 24px;
   fill: #ffffff;
 }
 
-.icon-modal{
+.icon-modal {
   width: 18px;
   height: 18px;
   fill: #212121;
@@ -837,9 +837,33 @@ footer .link {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form input:focus + .icon-modal{
+.modal-form input:focus + .icon-modal {
   fill: var(--color-blue);
-}     
+}
 
+/* custom checkbox */
 
+.modal-icon {
+  width: 11px;
+  height: 8px;
+}
 
+.modal-icon-span {
+  width: 16px;
+  height: 15px;
+  cursor: pointer;
+
+  fill: transparent;
+  border: 2px solid rgba(33, 33, 33, 1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+.input-checkbox:checked + .modal-icon-span {
+  fill: #ffffff;
+  background-color: var(--color-blue);
+  border-color: transparent;
+}
